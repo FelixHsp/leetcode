@@ -1,3 +1,12 @@
+/*
+ * @Author: Felix 
+ * @File: https://leetcode-cn.com/problems/most-common-word/
+ * @Date: 2022-04-19 21:07:47 
+ * @Last Modified by: Felix
+ * @Last Modified time: 2022-04-19 21:08:11
+ */
+
+
 const mostCommonWord = (paragraph: string, banned: string[]): string => {
   const list = paragraph.match(/\b\w+\b/g) as RegExpMatchArray;
   const map: Record<string, number> = {};

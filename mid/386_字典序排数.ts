@@ -1,3 +1,11 @@
+/*
+ * @Author: Felix 
+ * @File: https://leetcode-cn.com/problems/lexicographical-numbers/
+ * @Date: 2022-04-19 21:08:32 
+ * @Last Modified by:   Felix 
+ * @Last Modified time: 2022-04-19 21:08:32 
+ */
+
 const lexicalOrder = (n: number): number[] => {
   const array: number[] = [];
   const dfs = (m: number) => {

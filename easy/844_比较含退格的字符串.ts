@@ -1,3 +1,12 @@
+/*
+ * @Author: Felix 
+ * @File: https://leetcode-cn.com/problems/backspace-string-compare/
+ * @Date: 2022-04-19 21:08:20 
+ * @Last Modified by:   Felix 
+ * @Last Modified time: 2022-04-19 21:08:20 
+ */
+
+
 const backspaceCompare = (s: string, t: string): boolean => {
   const sStack = [];
   const tStack = [];
