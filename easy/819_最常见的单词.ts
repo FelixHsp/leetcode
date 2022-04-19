@@ -1,7 +1,7 @@
 const mostCommonWord = (paragraph: string, banned: string[]): string => {
-  const list = paragraph.match(/\b\w+\b/g);
-  const map = {};
-  const bannedMap = {};
+  const list = paragraph.match(/\b\w+\b/g) as RegExpMatchArray;
+  const map: Record<string, number> = {};
+  const bannedMap: Record<string, number> = {};
   const currentMax = {
     word: '',
     num: 0
@@ -26,3 +26,5 @@ const mostCommonWord = (paragraph: string, banned: string[]): string => {
 const paragraph = 'Bob hit a ball, the hit BALL flew far after it was hit.';
 const banned = ['hit'];
 console.log(mostCommonWord(paragraph, banned));
+
+export default void 0;

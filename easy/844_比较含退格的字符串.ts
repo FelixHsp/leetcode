@@ -30,3 +30,5 @@ const s = 'ab#c';
 const t = 'ad#c';
 
 console.log(backspaceCompare(s, t));
+
+export default void 0;

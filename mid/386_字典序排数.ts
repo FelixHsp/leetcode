@@ -1,5 +1,5 @@
 const lexicalOrder = (n: number): number[] => {
-  const array = [];
+  const array: number[] = [];
   const dfs = (m: number) => {
     if (m > n) {
       return;
@@ -39,3 +39,5 @@ const lexicalOrder = (n: number): number[] => {
 
 const n = 23;
 console.log(lexicalOrder(n));
+
+export default void 0;
