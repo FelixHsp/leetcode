@@ -4,7 +4,7 @@
  * @Tags: 二分、查找
  * @Date: 2022-04-24 21:45:29 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-04-24 22:14:15
+ * @Last Modified time: 2022-04-25 21:10:08
  */
 
 const solution = (isBadVersion: any) => {
@@ -34,3 +34,5 @@ const isBadVersion = (n: number): boolean => {
 };
 
 console.log(solution(isBadVersion)(5));
+
+export default void 0;

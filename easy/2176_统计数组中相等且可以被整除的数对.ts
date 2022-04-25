@@ -3,7 +3,7 @@
  * @file: https://leetcode-cn.com/problems/count-equal-and-divisible-pairs-in-an-array/
  * @Date: 2022-04-20 22:21:42 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-04-20 22:41:25
+ * @Last Modified time: 2022-04-25 21:10:27
  */
 
 // const countPairs = (nums: number[], k: number): number => {
@@ -42,3 +42,5 @@ const countPairs = (nums: number[], k: number): number => {
 };
 
 console.log(countPairs([3,1,2,2,2,1,3], 2));
+
+export default void 0;

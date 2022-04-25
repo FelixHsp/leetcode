@@ -4,7 +4,7 @@
  * @Tags: 二分、查找
  * @Date: 2022-04-24 22:24:31 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-04-24 22:33:13
+ * @Last Modified time: 2022-04-25 21:10:03
  */
 
 const searchInsert = (nums: number[], target: number): number => {
@@ -28,3 +28,5 @@ const nums = [2, 4, 6, 8, 10, 12];
 const target = 11;
 
 console.log(searchInsert(nums, target));
+
+export default void 0;

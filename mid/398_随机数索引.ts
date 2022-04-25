@@ -4,7 +4,7 @@
  * @Tags: map
  * @Date: 2022-04-25 20:53:30 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-04-25 21:04:57
+ * @Last Modified time: 2022-04-25 21:10:45
  */
 
 class Solution {
@@ -28,3 +28,5 @@ class Solution {
     return array[Math.floor(Math.random() * array.length)];
   }
 }
+
+export default void 0;
