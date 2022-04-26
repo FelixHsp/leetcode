@@ -1,9 +1,10 @@
 /*
  * @Author: Felix 
  * @File: https://leetcode-cn.com/problems/move-zeroes/
+ * @Tags: 双指针
  * @Date: 2022-04-26 21:10:10 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-04-26 21:25:00
+ * @Last Modified time: 2022-04-26 21:26:23
  */
 
 // const moveZeroes = (nums: number[]): void => {

@@ -1,9 +1,10 @@
 /*
  * @Author: Felix 
  * @File: https://leetcode-cn.com/problems/projection-area-of-3d-shapes/
+ * @Tags: 多维
  * @Date: 2022-04-26 20:39:02 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-04-26 21:08:18
+ * @Last Modified time: 2022-04-26 21:26:38
  */
 
 const projectionArea = (grid: number[][]): number => {
