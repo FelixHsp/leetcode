@@ -1,9 +1,10 @@
 /*
  * @Author: Felix 
  * @File: https://leetcode-cn.com/problems/reverse-string/
+ * @Tags: 双指针
  * @Date: 2022-04-28 21:19:47 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-04-28 21:25:41
+ * @Last Modified time: 2022-04-28 21:26:40
  */
 
 const reverseString = (s: string[]): void => {
