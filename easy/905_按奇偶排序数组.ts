@@ -1,9 +1,10 @@
 /*
  * @Author: Felix 
  * @File: https://leetcode-cn.com/problems/sort-array-by-parity/
+ * @Tags: 双指针
  * @Date: 2022-04-28 21:14:08 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-04-28 21:17:26
+ * @Last Modified time: 2022-04-28 21:20:01
  */
 
 const sortArrayByParity = (nums: number[]): number[] => {
