@@ -1,9 +1,10 @@
 /*
  * @Author: Felix 
  * @File: https://leetcode-cn.com/problems/construct-quad-tree/
+ * @Tags: 遍历
  * @Date: 2022-04-30 19:24:44 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-04-30 20:24:54
+ * @Last Modified time: 2022-04-30 20:26:49
  */
 
 class Node {
