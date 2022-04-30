@@ -4,7 +4,7 @@
  * @Tags: 链表、双指针
  * @Date: 2022-04-30 20:42:34 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-04-30 21:06:45
+ * @Last Modified time: 2022-04-30 21:12:44
  */
 
 class ListNode {
@@ -28,7 +28,7 @@ const middleNode = (head: ListNode | null): ListNode | null => {
   return slow;
 };
 
-const head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
+const head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
 
 console.log(middleNode(head));
 export default void 0;
