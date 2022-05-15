@@ -1,9 +1,10 @@
 /*
  * @Author: Felix 
  * @File: https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/
+ * @Tags: 栈、队列
  * @Date: 2022-05-15 15:52:18 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-05-15 16:03:12
+ * @Last Modified time: 2022-05-15 16:04:43
  */
 
 class CQueue {
