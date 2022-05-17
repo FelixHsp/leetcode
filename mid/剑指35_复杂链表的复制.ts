@@ -4,7 +4,7 @@
  * @Tags: 链表
  * @Date: 2022-05-16 21:51:26 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-05-16 22:25:49
+ * @Last Modified time: 2022-05-16 22:32:35
  */
 
 class Node {
@@ -73,7 +73,7 @@ const copyRandomList = (head: Node | null): Node | null => {
     current = current.next as Node;
     newNode = newNode.next as Node;
   }
-  current.next= null;
+  current.next = null;
 
   return result;
 }
