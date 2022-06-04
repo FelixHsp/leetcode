@@ -1,9 +1,9 @@
 /*
  * @Author: Felix 
- * @File: https://leetcode.cn/problems/binary-tree-inorder-traversal/
- * @Date: 2022-06-04 16:17:27 
+ * @File: https://leetcode.cn/problems/binary-tree-postorder-traversal/
+ * @Date: 2022-06-04 16:33:15 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-06-04 16:27:46
+ * @Last Modified time: 2022-06-04 16:42:05
  */
 
 class TreeNode {
@@ -17,7 +17,7 @@ class TreeNode {
   }
 }
 
-const inorderTraversal = (root: TreeNode | null): number[] => {
+const postorderTraversal = (root: TreeNode | null): number[] => {
   if (!root) {
     return [];
   }
@@ -28,15 +28,15 @@ const inorderTraversal = (root: TreeNode | null): number[] => {
   while (stack.length || cur) {
     if (cur) {
       stack.unshift(cur);
-      cur = cur.left;
+      cur = cur.left || cur.right;
     }
     else {
       const node = stack.shift() as TreeNode;
       result.push(node.val);
-      cur = node.right;
+      cur = stack[0]?.right || null;
     }
   }
-
+  
   return result;
 };
 
