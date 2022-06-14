@@ -1,10 +1,10 @@
 /*
  * @Author: Felix 
  * @File: https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/
- * @Tags: 正则
+ * @Tags: 贪心
  * @Date: 2022-06-14 21:54:01 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-06-14 22:06:35
+ * @Last Modified time: 2022-06-14 22:16:08
  */
 
 const maxProfit = (prices: number[]): number => {

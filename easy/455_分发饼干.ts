@@ -1,9 +1,9 @@
 /*
  * @Author: Felix 
- * @File: 贪心算法
+ * @File: 贪心
  * @Date: 2022-06-12 15:18:50 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-06-12 15:37:50
+ * @Last Modified time: 2022-06-14 22:16:26
  */
 
 const findContentChildren = (g: number[], s: number[]): number => {
