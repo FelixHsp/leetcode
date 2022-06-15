@@ -3,7 +3,7 @@
  * @File: 贪心
  * @Date: 2022-06-12 15:18:50 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-06-14 22:16:26
+ * @Last Modified time: 2022-06-15 22:05:50
  */
 
 const findContentChildren = (g: number[], s: number[]): number => {
@@ -16,7 +16,7 @@ const findContentChildren = (g: number[], s: number[]): number => {
   let i = 0;
   let j = 0;
 
-  while (i < gLen && j < sLen) {
+  while (i < gLen && j < sLen) { 
     if (s[j] >= g[i]) {
       j++;
       i++;
