@@ -3,7 +3,7 @@
  * @File: https://leetcode.cn/problems/find-bottom-left-tree-value/
  * @Date: 2022-06-22 21:16:10 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-06-22 21:30:53
+ * @Last Modified time: 2022-06-22 21:33:34
  */
 
 class TreeNode {
@@ -23,7 +23,7 @@ const findBottomLeftValue = (root: TreeNode | null): number => {
 
   while (stack.length) {
     const { tree, level } = stack.shift() as { tree: TreeNode, level: number };
-    if (!array[level]) {
+    if (array[level] === undefined) {
       array[level] = tree.val;
     }
 
