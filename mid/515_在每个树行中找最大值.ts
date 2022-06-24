@@ -1,9 +1,9 @@
 /*
  * @Author: Felix 
- * @File: https://leetcode.cn/problems/find-bottom-left-tree-value/
- * @Date: 2022-06-22 21:16:10 
+ * @File: https://leetcode.cn/problems/find-largest-value-in-each-tree-row/
+ * @Date: 2022-06-24 22:27:45 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-06-24 22:29:30
+ * @Last Modified time: 2022-06-24 22:29:40
  */
 
 class TreeNode {
@@ -17,21 +17,23 @@ class TreeNode {
   }
 }
 
-const findBottomLeftValue = (root: TreeNode | null): number => {
+const largestValues = (root: TreeNode | null): number[] => {
+  if (!root) {
+    return [];
+  }
   const stack = [{ tree: root, level: 0 }];
   const array: number[] = [];
 
   while (stack.length) {
     const { tree, level } = stack.shift() as { tree: TreeNode, level: number };
-    if (array[level] === undefined) {
-      array[level] = tree.val;
-    }
+    const current = array[level] === undefined ? -Infinity : array[level];
+    array[level] = Math.max(current, tree.val);
 
     tree.left && stack.push({ tree: tree.left, level: level + 1 });
     tree.right && stack.push({ tree: tree.right, level: level + 1 });
   }
 
-  return array[array.length - 1];
+  return array;
 };
 
 export default void 0;
