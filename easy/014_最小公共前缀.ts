@@ -3,25 +3,14 @@
  * @File: https://leetcode-cn.com/problems/longest-common-prefix/
  * @Date: 2022-05-08 09:56:41 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-05-08 10:34:32
+ * @Last Modified time: 2022-07-02 10:46:21
  */
 
 const longestCommonPrefix = (strs: string[]): string => {
-  const string = strs.join(' ');
-  let pre = '';
-  
-  for (let i = 1; i <= strs[0].length; i++) {
-    const str = strs[0].slice(0, i);
-    
-    if (string.match(new RegExp('\\b' + str + '\\w*\\b', 'g'))?.length === strs.length) {
-      pre = str;
-    }
-    else {
-      break;
-    }
-  }
+  const str = strs.join('-');
+  const array = str.match(new RegExp(`(\\w*)\\w*(\\-(\\1)\\w*){${strs.length - 1}}`));
 
-  return pre;
+  return array ? array[1] : '';
 };
 
 const strs = ['abcde', 'abkojoi'];
