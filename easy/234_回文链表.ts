@@ -3,7 +3,7 @@
  * @File: https://leetcode.cn/problems/palindrome-linked-list/
  * @Date: 2022-07-02 10:48:26 
  * @Last Modified by: Felix
- * @Last Modified time: 2022-07-02 11:06:11
+ * @Last Modified time: 2022-07-02 11:12:03
  */
 
 class ListNode {
@@ -52,3 +52,5 @@ const isPalindrome = (head: ListNode | null): boolean => {
 
   return true;
 };
+
+export default void 0;
